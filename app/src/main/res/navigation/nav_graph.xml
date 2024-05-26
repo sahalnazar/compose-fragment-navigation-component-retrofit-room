@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ProductListingFragment">
+
+    <fragment
+        android:id="@+id/ProductListingFragment"
+        android:name="com.sahalnazar.test.presentation.productlisting.ProductListingFragment"
+        android:label="@string/product_listing_label">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/AddProductFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/AddProductFragment"
+        android:name="com.sahalnazar.test.presentation.addproduct.AddProductFragment"
+        android:label="@string/add_product_label">
+    </dialog>
+</navigation>
